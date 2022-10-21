@@ -8,15 +8,16 @@ func main() {
 	//fmt.Println(card)
 
 	//vamos a ver como se pueden hacer varias cartas al mismo tiempo
-	cards := deck{"Ace of Diamonds", newCard()} //se crea un enlace con la clase deck.go
+	//cards := deck{"Ace of Diamonds", newCard()} //se crea un enlace con la clase deck.go
 	//en esta parte estamos haciendo un slice que es como un tipo de array pero este solo se basa en un tipo de valor, es este caso string
-	cards = append(cards, "Six of Spades")
+	//cards = append(cards, "Six of Spades")
 	// como podemos iterar un slice
+	cards := newDeck()
 
 	cards.print()
 
 }
 
-func newCard() string { //en cualquier momento que esta funcion sea ejecutada va a return un tipo string
-	return "Five of Diamonds"
-}
+//func newCard() string { //en cualquier momento que esta funcion sea ejecutada va a return un tipo string
+//	return "Five of Diamonds"
+//}
