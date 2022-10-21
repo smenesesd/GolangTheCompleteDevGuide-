@@ -10,7 +10,7 @@ import "fmt"
 // Al momento de ejecutarlo debemos de ejecutar main.go y deck.go
 type deck []string //se crea un enlace con el string de main.go para asi darle ese slice de strings
 
-func (d deck) print() { //este es el recividor de la funcion
+func (d deck) print() { //este es el recividor de la funcion, cualquier variable dentro de nuestra aplicacion de tipo deck, ahora tiene acceso a el metodo print
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
