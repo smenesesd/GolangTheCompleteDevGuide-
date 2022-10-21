@@ -30,3 +30,7 @@ func (d deck) print() { //este es el recividor de la funcion, cualquier variable
 		fmt.Println(i, card)
 	}
 }
+
+func deal(d deck, handSize int) (deck, deck) {
+
+}
