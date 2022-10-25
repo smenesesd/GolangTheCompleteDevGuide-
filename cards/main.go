@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var card string = "Ace of Spades"
 	//card := newCard()
@@ -12,9 +14,14 @@ func main() {
 	//en esta parte estamos haciendo un slice que es como un tipo de array pero este solo se basa en un tipo de valor, es este caso string
 	//cards = append(cards, "Six of Spades")
 	// como podemos iterar un slice
-	cards := newDeck()
+	//cards := newDeck()
 
-	cards.print()
+	//hand, remainingCards := deal(cards, 5)
+
+	//hand.print()
+	//remainingCards.print()
+	greeting := "Hi there!"       //Byte slice Type convercion
+	fmt.Println([]byte(greeting)) //Byte slice Type convercion
 
 }
 
