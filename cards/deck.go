@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // deck type es como un pedazo de String
 
@@ -35,6 +38,6 @@ func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
 
-func toString() {
-
+func (d deck) toString() string { //es donde convertimos el deck en un string y byte slice
+	return strings.Join([]string(d), ",") //varios strings se convertiran en un solo string
 }

@@ -20,8 +20,10 @@ func main() {
 
 	//hand.print()
 	//remainingCards.print()
-	greeting := "Hi there!"       //Byte slice Type convercion
-	fmt.Println([]byte(greeting)) //Byte slice Type convercion
+	//greeting := "Hi there!"       //Byte slice Type convercion
+	//fmt.Println([]byte(greeting)) //Byte slice Type convercion
+	cards := newDeck()
+	fmt.Println(cards.toString()) //saldra solo 1 string
 
 }
 
