@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"strings"
 )
 
@@ -40,4 +41,8 @@ func deal(d deck, handSize int) (deck, deck) {
 
 func (d deck) toString() string { //es donde convertimos el deck en un string y byte slice
 	return strings.Join([]string(d), ",") //varios strings se convertiran en un solo string
+}
+
+func (d deck) saveToFile(filename string) error { //hay que pensar esto que recibira despues, en este caso es un receiver de tipo deck
+	ioutil.WriteFile(filename, []byte(d.toString()), 0666) // este 0666 son los permisos del archivo que en este caso seria que todo el mundo lo puede leer y escribir en este archivo
 }
